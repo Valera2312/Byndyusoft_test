@@ -31,42 +31,42 @@ class MainTest {
 
        Assertions.assertEquals( 1,Main.sumOfTwoMinimalNumbersInArray(arrayWithMillionElements));
         System.out.print("sumOfTwoMinimalNumbersInArrayMillionElements ");
-        System.out.println((double) (System.currentTimeMillis() - start));
+        System.out.println(System.currentTimeMillis() - start);
     }
     @Test
     void sumOfTwoMinimalNumbersInArraysTheSameElements() {
 
         Assertions.assertEquals( 1,Main.sumOfTwoMinimalNumbersInArray(arrayWithTheSameElements));
         System.out.print("sumOfTwoMinimalNumbersInArraysTheSameElements ");
-        System.out.println((double) (System.currentTimeMillis() - start));
+        System.out.println(System.currentTimeMillis() - start);
     }
     @Test
     void sumOfTwoMinimalNumbersInArraysEmptyArray() {
 
         Assertions.assertEquals( 0,Main.sumOfTwoMinimalNumbersInArray(emptyArray));
         System.out.print("sumOfTwoMinimalNumbersInArraysEmptyArray ");
-        System.out.println((double) (System.currentTimeMillis() - start));
+        System.out.println(System.currentTimeMillis() - start);
     }
     @Test
     void sumOfTwoMinimalNumbersInArrayStreamMillionElements() {
         long m = System.currentTimeMillis();
         Assertions.assertEquals( 1,Main.sumOfTwoMinimalNumbersInArrayStream(arrayWithMillionElements));
         System.out.print("sumOfTwoMinimalNumbersInArrayStreamMillionElements ");
-        System.out.println((double) (System.currentTimeMillis() - m));
+        System.out.println(System.currentTimeMillis() - start);
     }
     @Test
     void sumOfTwoMinimalNumbersInArrayTheSameElementsStream() {
-        long m = System.currentTimeMillis();
+
         Assertions.assertEquals( 1,Main.sumOfTwoMinimalNumbersInArrayStream(arrayWithTheSameElements));
         System.out.print("sumOfTwoMinimalNumbersInArrayTheSameElementsStream ");
-        System.out.println((double) (System.currentTimeMillis() - m));
+        System.out.println(System.currentTimeMillis() - start);
     }
     @Test
     void sumOfTwoMinimalNumbersInArraysEmptyArrayStream() {
 
         Assertions.assertEquals( 0,Main.sumOfTwoMinimalNumbersInArrayStream(emptyArray));
         System.out.print("sumOfTwoMinimalNumbersInArraysEmptyArrayStream ");
-        System.out.println((double) (System.currentTimeMillis() - start));
+        System.out.println(System.currentTimeMillis() - start);
     }
 
 }
