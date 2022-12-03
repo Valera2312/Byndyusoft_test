@@ -64,7 +64,7 @@ class MainTest {
 
         Assertions.assertEquals( 0,Main.sumOfTwoMinimalNumbersInArrayStream(emptyArray));
         System.out.print("sumOfTwoMinimalNumbersInArraysEmptyArrayStream ");
-        System.out.println(System.currentTimeMillis() - start);
+        System.out.println(System.currentTimeMillis()- start);
     }
 
 }
