@@ -1,4 +1,3 @@
-import jdk.jfr.Label;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -49,7 +48,6 @@ class MainTest {
     }
     @Test
     void sumOfTwoMinimalNumbersInArrayStreamMillionElements() {
-        long m = System.currentTimeMillis();
         Assertions.assertEquals( 1,Main.sumOfTwoMinimalNumbersInArrayStream(arrayWithMillionElements));
         System.out.print("sumOfTwoMinimalNumbersInArrayStreamMillionElements ");
         System.out.println(System.currentTimeMillis() - start);
